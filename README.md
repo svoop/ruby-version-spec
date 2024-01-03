@@ -3,6 +3,7 @@
 ## Living Specification
 
 * Only the first line not starting with `#` is read, all other lines are ignored.
+* The trailing newline character on the last (and possibly only) line is optional.
 * The full notation is `RUNTIME-VERSION` e.g. `jruby-3.2.2`
 * The separator between RUNTIME and VERSION contains  dash(es) or witespace(s) only: `/[-\s]+/`
 * If the RUNTIME and separator are omitted, the default runtime is `ruby` (MRI).
