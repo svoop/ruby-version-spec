@@ -5,7 +5,7 @@
 * The file contains exactly one line.
 * The trailing newline character is optional.
 * The full notation is `RUNTIME-VERSION` e.g. `jruby-3.2.2`
-* The separator between RUNTIME and VERSION contains  dash(es) or witespace(s) only: `/[-\s]+/`
+* The separator between RUNTIME and VERSION is exactly one dash `-`
 * If the RUNTIME and separator are omitted, the default runtime is `ruby` (MRI).
 * The VERSION is either strict or relaxed:
   * Strict versions refer to a specific version e.g. `3.2.2` or `3.3.0-rc2`
