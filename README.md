@@ -1,11 +1,12 @@
 # Brainstorming the Specs of .ruby-version
 
-## Living Specification
+## Specification Draft
 
 * The file contains exactly one line.
 * The trailing newline character is optional.
 * The full notation is `ENGINE-VERSION` e.g. `jruby-3.2.2`
 * The separator between ENGINE and VERSION is exactly one dash `-`
+* The ENGINE may contain one or multiple build config flags added with a plus `+` e.g `truffleruby+graalvm`
 * If the ENGINE and separator are omitted, the default engine is `ruby` (MRI).
 * The VERSION is either strict or relaxed:
   * Strict versions refer to a specific MAJOR.MINOR.PATCH version e.g. `3.2.2` or `3.3.0-rc2`
