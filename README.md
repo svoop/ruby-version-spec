@@ -14,4 +14,13 @@
 
 ## Discussion
 
-To join the discussion, [head over here](https://github.com/rubygems/rubygems/discussions/7074).
+To join the discussion, [head over here](https://github.com/rubygems/rubygems/discussions/7074). Here are some of the arguments that have emerged so far:
+
+* `.ruby-version` has been introduced as a way to declare the "Ruby version currently used for development" and this should remain its primary function.
+* When using it e.g. to lock a Ruby version in a bundler Gemfile with `ruby: file: ".ruby_version"`, you lose the ability to declare a relaxed version.
+* The above also applies when it is used to select a Ruby for deployment. However, you're encouraged to rely on the locked Ruby version in `Gemfile.lock` or `gems.locked` instead.
+* Allowed engines are not part of the specification, but should be listed informally in a guide/FAQ accompanying the specification.
+
+## Questions
+
+* Parsing of `.ruby-version` could be simplified by making the ENGINE mandatory. It should be the Ruby version manager maintainers call to decide whether they want to adopt such a change though.
